@@ -1,39 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expenditions</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<style>
-    body{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .expenditions{
-        transition: transform 0.75s ease;
-    }
-    .expenditions:hover{
-        cursor:pointer;
-        transform: translateY(-10px);
-    }
-    .expenditions:hover .sixthousand{
-        color: blue;
-        transition: 0.5s all;
-    }
-    .trekking:hover{
-        background-color: #aaaaaa !important;
-        color: black !important;
-        transition: 0.5s all;
-    }
-</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .expenditions {
+            transition: transform 0.75s ease;
+        }
+
+        .expenditions:hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+        }
+
+        .expenditions:hover .sixthousand {
+            color: blue;
+            transition: 0.5s all;
+        }
+
+        .trekking:hover {
+            background-color: #aaaaaa !important;
+            color: black !important;
+            transition: 0.5s all;
+        }
+
+        .aboutone {
+            color: rgb(109, 107, 107);
+            font-size: 3rem;
+        }
+
+        .abouttwo {
+            color: rgba(12, 188, 135, 1);
+        }
+
+        .explore {
+            background-color: black;
+        }
+
+        .cardHov:hover {
+            transform: translateY(-5px);
+            transition-duration: 0.3s;
+
+            .title {
+                color: #238cc8 !important;
+            }
+        }
+
+        .cardHov:not(:hover) {
+            transition-duration: 0.3s;
+        }
+        .button-prev,
+        .button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(14, 14, 14, 0.5);
+            font-size: 3rem;
+            z-index: 10;
+        }
+
+        .button-prev {
+            left: 10px;
+        }
+
+        .button-next {
+            right: 10px;
+        }
+
+        .changes {
+            top: 30%;
+            padding-left: 110px;
+
+        }
+        .subs:focus{
+            box-shadow: none;
+        }
+
+    </style>
 </head>
+
 <body>
+    <div class="container-fluid px-0">
+
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide position-relative">
+                    <div class="position-absolute changes  text-white ">
+                        <h3 class="fw-bold">Island Peak Exhibition</h3>
+                        <h1 class="fw-bolder mb-3" style="font-size: 60px;">Island Peak</h1>
+                        <button type="button" class="btn btn-info">Discover More</button>
+                    </div>
+                    <img src="../Images/ms1.jpg"
+                        class="w-100 object-fit-cover" style="height: 550px;">
+                </div>
+                <div class="swiper-slide position-relative">
+                    <div class="position-absolute changes  text-white ">
+                        <h3 class="fw-bold">Your first step on the mightest mountain on Earth</h3>
+                        <h1 class="fw-bolder" style="font-size: 60px;">Mera Peak Climbing</h1>
+                        <button type="button" class="btn btn-info">Find out more</button>
+                    </div>
+                    <img src="../Images/ms2.jpg"
+                        class="w-100 object-fit-cover" style="height: 550px;">
+                </div>
+            </div>
+
+
+            <div class="button-prev">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+            </div>
+            <div class="button-next">
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mb-4">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h2 class="text-center aboutone fw-bold">Welcome to <span class="abouttwo">ALTERNATIVE NEPAL TREKS
+                        & EXPEDITION,</span> a leading operator in trekking and
+                    peak climbing in Nepal.</h2>
+                <p class="text-center text-secondary fs-5">Alternative Nepal is a bespoke adventure outfit. Whatever
+                    your desire, our team can tailor trips to meet
+                    your needs. We offer rafting, trekking, climbing and mountain biking or the mix of all to get you
+                    off
+                    the beaten tourist track. Our guides have each spent more than a decade exploring and guiding
+                    Nepal’s
+                    wilderness, discovering new routes, rivers and trails. Please feel free to request a quote for your
+                    next
+                    trip.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="d-flex justify-content-center list-unstyled fs-4 gap-2">
+                    <li class="d-flex align-items-center gap-1 fs-6">
+                        <i class="bi bi-star text-warning"></i>Have High Rating
+                    </li>
+                    <li class="d-flex align-items-center gap-1 fs-6">
+                        <i class="bi bi-pin-map text-primary"></i>
+                        Best Locations
+                    </li>
+                    <li class="d-flex align-items-center gap-1 fs-6">
+                        <i class="bi bi-x-octagon text-danger"></i>
+                        Free Cancellation
+                    </li>
+                    <li class="d-flex align-items-center gap-1 fs-6">
+                        <i class="bi bi-wallet text-success"></i>Payment Options
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center align-items-center gap-3">
+                    <h3 class="fw-bold fs-1 text-secondary">4.5</h3>
+                    <div class="px-2">
+                        <ul class="d-flex list-unstyled gap-1 mb-0 justify-content-center">
+                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                            <li><i class="bi bi-star-half text-warning"></i></li>
+                        </ul>
+                        <p class="mb-0">Clients Love Us!</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark rounded-3 px-3 py-2">Explore now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bg-secondary pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="mt-4 d-flex justify-content-between">
-                        <h2 class="text-uppercase fw-bold fs-1 text-white" style="letter-spacing: 3px;">Expenditions</h2>
+                        <h2 class="text-uppercase fw-bold fs-1 text-white" style="letter-spacing: 3px;">Expenditions
+                        </h2>
                         <button class="btn btn-primary mb-0">View All</button>
                     </div>
                 </div>
@@ -42,48 +197,56 @@
                         <div class="col-lg-3">
                             <div class="bg-white expenditions shadow rounded-5 mt-4">
                                 <div>
-                                    <img src="../Images/m1.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1" style="height: 235px;">
+                                    <img src="../Images/m1.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1"
+                                        style="height: 235px;">
                                 </div>
                                 <div class="px-3 pb-2">
                                     <p class="text-uppercase mt-2 fw-bold text-success mb-0">Expenditions</p>
                                     <p class="fs-2 fw-bold mb-0 sixthousand">6000M</p>
-                                    <p class="" style="text-align: justify;">Nepal has the highest mountain in the world, Mount Everest as well as 1,310 peaks over 6,000 m height.</p>
+                                    <p class="" style="text-align: justify;">Nepal has the highest mountain in the
+                                        world, Mount Everest as well as 1,310 peaks over 6,000 m height.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="bg-white expenditions shadow rounded-5 mt-4">
                                 <div>
-                                    <img src="../Images/m2.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1" style="height: 235px;">
+                                    <img src="../Images/m2.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1"
+                                        style="height: 235px;">
                                 </div>
                                 <div class="px-3 pb-2">
                                     <p class="text-uppercase mt-2 fw-bold text-success mb-0">Expenditions</p>
                                     <p class="fs-2 fw-bold mb-0 sixthousand">7000M</p>
-                                    <p class="" style="text-align: justify;">Nepal has the highest mountain in the world, Mount Everest as well as 1,310 peaks over 6,000 m height.</p>
+                                    <p class="" style="text-align: justify;">Nepal has the highest mountain in the
+                                        world, Mount Everest as well as 1,310 peaks over 6,000 m height.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="bg-white expenditions shadow rounded-5 mt-4">
                                 <div>
-                                    <img src="../Images/m3.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1" style="height: 235px;">
+                                    <img src="../Images/m3.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1"
+                                        style="height: 235px;">
                                 </div>
                                 <div class="px-3 pb-2">
                                     <p class="text-uppercase mt-2 fw-bold text-success mb-0">Expenditions</p>
                                     <p class="fs-2 fw-bold mb-0 sixthousand">8000M</p>
-                                    <p class="" style="text-align: justify;">Nepal has the highest mountain in the world, Mount Everest as well as 1,310 peaks over 6,000 m height.</p>
+                                    <p class="" style="text-align: justify;">Nepal has the highest mountain in the
+                                        world, Mount Everest as well as 1,310 peaks over 6,000 m height.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="bg-white expenditions shadow rounded-5 mt-4">
                                 <div>
-                                    <img src="../Images/m4.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1" style="height: 235px;">
+                                    <img src="../Images/m4.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1"
+                                        style="height: 235px;">
                                 </div>
                                 <div class="px-3 pb-2">
                                     <p class="text-uppercase mt-2 fw-bold text-success mb-0">Expenditions</p>
                                     <p class="fs-2 fw-bold mb-0 sixthousand">5000M</p>
-                                    <p class="" style="text-align: justify;">Nepal has the highest mountain in the world, Mount Everest as well as 1,310 peaks over 6,000 m height.</p>
+                                    <p class="" style="text-align: justify;">Nepal has the highest mountain in the
+                                        world, Mount Everest as well as 1,310 peaks over 6,000 m height.</p>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +268,9 @@
                     <div class="col-lg-4">
                         <div class="bg-white expenditions shadow rounded-5 mt-4">
                             <div>
-                                <img src="../Images/T1.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1  object-fit-cover" style="height: 450px;">
+                                <img src="../Images/T1.jpg" alt=""
+                                    class="w-100 rounded-top-5 rounded-bottom-1  object-fit-cover"
+                                    style="height: 450px;">
                             </div>
                             <div class="px-3 pb-2">
                                 <p class="text-uppercase mt-2 fw-bold fs-6 text-success mb-0">Trekking</p>
@@ -117,7 +282,9 @@
                     <div class="col-lg-4">
                         <div class="bg-white expenditions shadow rounded-5 mt-4">
                             <div>
-                                <img src="../Images/T2.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1 object-fit-cover" style="height: 450px;">
+                                <img src="../Images/T2.jpg" alt=""
+                                    class="w-100 rounded-top-5 rounded-bottom-1 object-fit-cover"
+                                    style="height: 450px;">
                             </div>
                             <div class="px-3 pb-2">
                                 <p class="text-uppercase mt-2 fw-bold fs-6 text-success mb-0">Trekking</p>
@@ -129,7 +296,9 @@
                     <div class="col-lg-4">
                         <div class="bg-white expenditions shadow rounded-5 mt-4">
                             <div>
-                                <img src="../Images/t.jpg" alt="" class="w-100 rounded-top-5 rounded-bottom-1 object-fit-cover" style="height: 450px;">
+                                <img src="../Images/t.jpg" alt=""
+                                    class="w-100 rounded-top-5 rounded-bottom-1 object-fit-cover"
+                                    style="height: 450px;">
                             </div>
                             <div class="px-3 pb-2">
                                 <p class="text-uppercase mt-2 fw-bold fs-6 text-success mb-0">Trekking</p>
@@ -142,6 +311,162 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="bg-black w-100 my-5">
+        <div class="container p-5 ">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h3 class="text-white fw-bold">Special Expeditions 2025</h3>
+                </div>
+                <div><button class="btn btn-sm btn-primary fw-bold">View All</button></div>
+
+            </div>
+            <div class="row justify-content-center g-4 py-4 ">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="rounded-4 overflow-hidden bg-white cardHov">
+                        <img src="../Images/island_peak_384658935.jpeg.jpg" alt="" class="w-100 " style="height: 250px;">
+                        <div class="p-3">
+                            <h3 class="fw-bold title">Island Peak</h3>
+                            <p class="text-secondary">Island Peak is one of the most popular peak of Nepal. Island Peak
+                                is located in eastern part of Nepal. It is known as Imja Tse too...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="text-secondary fw-bold ">18 days</h4>
+                                </div>
+                                <div>
+                                    <p class="text-secondary fw-bold mb-0 ">6000M Peaks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="rounded-4 overflow-hidden bg-white cardHov">
+                        <img src="../Images/mera_peak_real786299810.jpeg.jpg" alt="" class="w-100 " style="height: 250px;">
+                        <div class="p-3">
+                            <h3 class="fw-bold title">Mera Peak</h3>
+                            <p class="text-secondary">Island Peak is one of the most popular peak of Nepal. Island Peak
+                                is located in eastern part of Nepal. It is known as Imja Tse too...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="text-secondary fw-bold ">18 days</h4>
+                                </div>
+                                <div>
+                                    <p class="text-secondary fw-bold mb-0 ">6000M Peaks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="rounded-4 overflow-hidden bg-white cardHov">
+                        <img src="../Images/ama_dablam_real1051952267.jpg" alt="" class="w-100" style="height: 250px;">
+                        <div class="p-3">
+                            <h3 class="fw-bold title">Ama Dablam</h3>
+                            <p class="text-secondary">Island Peak is one of the most popular peak of Nepal. Island Peak
+                                is located in eastern part of Nepal. It is known as Imja Tse too...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="text-secondary fw-bold ">18 days</h4>
+                                </div>
+                                <div>
+                                    <p class="text-secondary fw-bold mb-0 ">6000M Peaks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="rounded-4 overflow-hidden bg-white cardHov">
+                        <img src="../Images/lobuche_east_peak_1547316301.jpg" alt="" class="w-100 "
+                            style="height: 250px;">
+                        <div class="p-3">
+                            <h3 class="fw-bold title">Lobuche East</h3>
+                            <p class="text-secondary">Island Peak is one of the most popular peak of Nepal. Island Peak
+                                is located in eastern part of Nepal. It is known as Imja Tse too...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="text-secondary fw-bold ">18 days</h4>
+                                </div>
+                                <div>
+                                    <p class="text-secondary fw-bold mb-0 ">6000M Peaks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="rounded-4 overflow-hidden bg-white cardHov">
+                        <img src="../Images/chulu_east_real506644801.jpg" alt="" class="w-100 " style="height: 250px;">
+                        <div class="p-3">
+                            <h3 class="fw-bold title">Chulu East</h3>
+                            <p class="text-secondary">Island Peak is one of the most popular peak of Nepal. Island Peak
+                                is located in eastern part of Nepal. It is known as Imja Tse too...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="text-secondary fw-bold ">18 days</h4>
+                                </div>
+                                <div>
+                                    <p class="text-secondary fw-bold mb-0 ">6000M Peaks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="rounded-4 overflow-hidden bg-white cardHov">
+                        <img src="../Images/everest_real1067622239.png" alt="" class="w-100" style="height: 250px;">
+                        <div class="p-3">
+                            <h3 class="fw-bold title">Everest</h3>
+                            <p class="text-secondary">Island Peak is one of the most popular peak of Nepal. Island Peak
+                                is located in eastern part of Nepal. It is known as Imja Tse too...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="text-secondary fw-bold ">18 days</h4>
+                                </div>
+                                <div>
+                                    <p class="text-secondary fw-bold mb-0 ">6000M Peaks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-light rounded-4 mt-5 py-5">
+        <div>
+            <h1 class="text-center text-secondary fw-bold">Subscribe & Get Special <br> Discount!</h1 class="text-center">
+        </div>
+    
+        <div class="mt-0 text-center text-secondary">
+            <p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man <br> children rejoiced.</p>
+        </div>
+    <div>
+        <div class="d-flex justify-content-center">
+            <form action="" class="bg-white d-flex  w-50">
+                <input type="text" class="form-control py-3 border-0 subs" placeholder="Enter your email">
+                <button class="btn end-0"><i class="bi bi-arrow-right-circle-fill fs-1"></i></button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+    
+            const swiper = new Swiper('.mySwiper', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.button-next',
+                    prevEl: '.button-prev',
+                },
+                loop: true
+            });
+        </script>
 </body>
+
 </html>
