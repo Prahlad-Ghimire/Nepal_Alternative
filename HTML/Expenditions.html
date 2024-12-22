@@ -59,6 +59,7 @@
         .cardHov:not(:hover) {
             transition-duration: 0.3s;
         }
+
         .button-prev,
         .button-next {
             position: absolute;
@@ -79,13 +80,12 @@
 
         .changes {
             top: 30%;
-            padding-left: 110px;
-
+            padding-left: 80px;
         }
-        .subs:focus{
+
+        .subs:focus {
             box-shadow: none;
         }
-
     </style>
 </head>
 
@@ -98,20 +98,18 @@
                 <div class="swiper-slide position-relative">
                     <div class="position-absolute changes  text-white ">
                         <h3 class="fw-bold">Island Peak Exhibition</h3>
-                        <h1 class="fw-bolder mb-3" style="font-size: 60px;">Island Peak</h1>
+                        <h1 class="fw-bolder mb-3" style="font-size: 45px;">Island Peak</h1>
                         <button type="button" class="btn btn-info">Discover More</button>
                     </div>
-                    <img src="../Images/ms1.jpg"
-                        class="w-100 object-fit-cover" style="height: 550px;">
+                    <img src="../Images/ms1.jpg" class="w-100 object-fit-content" style="height: 550px;">
                 </div>
                 <div class="swiper-slide position-relative">
                     <div class="position-absolute changes  text-white ">
                         <h3 class="fw-bold">Your first step on the mightest mountain on Earth</h3>
-                        <h1 class="fw-bolder" style="font-size: 60px;">Mera Peak Climbing</h1>
+                        <h1 class="fw-bolder" style="font-size: 45px;">Mera Peak Climbing</h1>
                         <button type="button" class="btn btn-info">Find out more</button>
                     </div>
-                    <img src="../Images/ms2.jpg"
-                        class="w-100 object-fit-cover" style="height: 550px;">
+                    <img src="../Images/ms2.jpg" class="w-100 object-fit-content" style="height: 550px;">
                 </div>
             </div>
 
@@ -313,17 +311,21 @@
     </div>
     <div class="bg-black w-100 my-5">
         <div class="container p-5 ">
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h3 class="text-white fw-bold">Special Expeditions 2025</h3>
+            <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h3 class="text-white fw-bold">Special Expeditions 2025</h3>
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-primary fw-bold">View All</button>
+                    </div>
                 </div>
-                <div><button class="btn btn-sm btn-primary fw-bold">View All</button></div>
-
             </div>
             <div class="row justify-content-center g-4 py-4 ">
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="rounded-4 overflow-hidden bg-white cardHov">
-                        <img src="../Images/island_peak_384658935.jpeg.jpg" alt="" class="w-100 " style="height: 250px;">
+                        <img src="../Images/island_peak_384658935.jpeg.jpg" alt="" class="w-100 "
+                            style="height: 250px;">
                         <div class="p-3">
                             <h3 class="fw-bold title">Island Peak</h3>
                             <p class="text-secondary">Island Peak is one of the most popular peak of Nepal. Island Peak
@@ -341,7 +343,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="rounded-4 overflow-hidden bg-white cardHov">
-                        <img src="../Images/mera_peak_real786299810.jpeg.jpg" alt="" class="w-100 " style="height: 250px;">
+                        <img src="../Images/mera_peak_real786299810.jpeg.jpg" alt="" class="w-100 "
+                            style="height: 250px;">
                         <div class="p-3">
                             <h3 class="fw-bold title">Mera Peak</h3>
                             <p class="text-secondary">Island Peak is one of the most popular peak of Nepal. Island Peak
@@ -433,40 +436,45 @@
             </div>
         </div>
     </div>
-    <div class="container bg-light rounded-4 mt-5 py-5">
-        <div>
-            <h1 class="text-center text-secondary fw-bold">Subscribe & Get Special <br> Discount!</h1 class="text-center">
+    <div class="container bg-dark rounded-4 py-5 mb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div>
+                    <h1 class="text-center text-secondary fw-bold">Subscribe & Get Special <br> Discount!</h1>
+                </div>
+
+                <div class="text-center text-secondary">
+                    <p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man <br>
+                        children rejoiced.</p>
+                </div>
+                <div class="w-100">
+                    <div class="d-flex justify-content-center">
+                        <form action="" class="bg-white d-flex">
+                            <input type="text" class="form-control py-3 border-0 subs" placeholder="Enter your email">
+                            <button class="btn end-0"><i class="bi bi-arrow-right-circle-fill fs-1"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-        <div class="mt-0 text-center text-secondary">
-            <p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man <br> children rejoiced.</p>
-        </div>
-    <div>
-        <div class="d-flex justify-content-center">
-            <form action="" class="bg-white d-flex  w-50">
-                <input type="text" class="form-control py-3 border-0 subs" placeholder="Enter your email">
-                <button class="btn end-0"><i class="bi bi-arrow-right-circle-fill fs-1"></i></button>
-            </form>
-        </div>
-    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-        <script>
-    
-            const swiper = new Swiper('.mySwiper', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                navigation: {
-                    nextEl: '.button-next',
-                    prevEl: '.button-prev',
-                },
-                loop: true
-            });
-        </script>
+    <script>
+
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+            loop: true
+        });
+    </script>
 </body>
 
 </html>
