@@ -1,0 +1,76 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.expenditions {
+  transition: transform 0.75s ease;
+}
+
+.expenditions:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.expenditions:hover .sixthousand {
+  color: blue;
+  transition: 0.5s all;
+}
+
+.trekking:hover {
+  background-color: #aaaaaa !important;
+  color: black !important;
+  transition: 0.5s all;
+}
+
+.aboutone {
+  color: rgb(109, 107, 107);
+  font-size: 3rem;
+}
+
+.abouttwo {
+  color: rgba(12, 188, 135, 1);
+}
+
+.explore {
+  background-color: black;
+}
+
+.cardHov:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
+
+  .title {
+      color: #238cc8 !important;
+  }
+}
+
+.cardHov:not(:hover) {
+  transition-duration: 0.3s;
+}
+
+.button-prev,
+.button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(14, 14, 14, 0.5);
+  font-size: 3rem;
+  z-index: 10;
+}
+
+.button-prev {
+  left: 10px;
+}
+
+.button-next {
+  right: 10px;
+}
+
+.changes {
+  top: 30%;
+  padding-left: 80px;
+}
+
+.subs:focus {
+  box-shadow: none;
+}
